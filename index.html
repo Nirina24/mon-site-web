@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme e-Concours</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Page d'accueil -->
+  <section id="homepage">
+    <div class="welcome-container">
+      <img src="image/ligne-060922-v.jpg" alt="Bienvenue" class="welcome-image">
+      <h1 class="fade-in">Bienvenue sur la plateforme e-Concours</h1>
+      <p class="fade-in">Inscrivez-vous et participez aux tests en ligne facilement.</p>
+      <button id="startButton" class="btn fade-in">Commencer</button>
+    </div>
+  </section>
+
+  <!-- Section d'inscription -->
+  <section id="registration" style="display: none;">
+    <header>
+      <h1>Inscription en ligne</h1>
+    </header>
+    <main>
+      <form id="registrationForm" class="form">
+        <label for="name">Nom complet :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cv">Télécharger votre CV :</label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+        <button type="submit" class="btn">S'inscrire</button>
+      </form>
+    </main>
+  </section>
+
+  <!-- Section de test -->
+  <section id="test" style="display: none;">
+    <main>
+      <h2>Test en ligne</h2>
+      <p>Répondez aux questions suivantes :</p>
+      <form id="testForm" class="form">
+        <label>Question 1 : Synonyme de "rapide" :</label>
+        <input type="text" name="q1" required>
+
+        <label>Question 2 : Participe passé du verbe "venir" :</label>
+        <input type="text" name="q2" required>
+
+        <label>Question 3 : "Le chat ___ sur le canapé."</label>
+        <input type="text" name="q3" required>
+
+        <label>Question 4 : Conjuguez "être" au présent, 3ème personne pluriel :</label>
+        <input type="text" name="q4" required>
+
+        <label>Question 5 : Capitale de la France :</label>
+        <input type="text" name="q5" required>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </main>
+  </section>
+
+  <!-- Section des résultats -->
+  <section id="results" style="display: none;">
+    <main>
+      <h2>Résultats</h2>
+      <p id="resultMessage"></p>
+    </main>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Plateforme e-Concours</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
